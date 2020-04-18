@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 var Airtable = require('airtable');
 
-const API_KEY = 'keyAXudEe8RBB0vNn'
+const API_KEY = ''
 var base = new Airtable({apiKey: API_KEY }).base('appAvx7alyyMwT8TR');
 
 
