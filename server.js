@@ -5,14 +5,14 @@ const app = express();
 const axios  = require('axios')
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keyAXudEe8RBB0vNn'}).base('appAvx7alyyMwT8TR');
+
+const API_KEY = 'keyAXudEe8RBB0vNn'
+var base = new Airtable({apiKey: API_KEY }).base('appAvx7alyyMwT8TR');
 
 
 // CONSTANT ROUTE/API KEY
 const AIR_TABLE_BASE_ROUTE = `https://api.airtable.com/v0/appAvx7alyyMwT8TR`
-const API_KEY = 'keyAXudEe8RBB0vNn'
 const surveys = `${AIR_TABLE_BASE_ROUTE}/surveys\?api_key\=${API_KEY}`
 
 app.use(express.static(path.join(__dirname, 'build')));
