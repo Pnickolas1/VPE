@@ -1,0 +1,25 @@
+{
+  "name": "vpe",
+  "version": "1.0.0",
+  "description": "code example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pnickolas1/VPE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pnickolas1/VPE/issues"
+  },
+  "homepage": "https://github.com/Pnickolas1/VPE#readme",
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  },
+  "proxy": "http://localhost:8080"
+}
